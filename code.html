@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Mobin Jiaoddin Shaikh - Machine Technician Portfolio</title>
+        <script>
+                // Set dark mode by default if no preference is explicitly stored
+                if (localStorage.getItem('theme') === 'light') {
+                        document.documentElement.classList.remove('dark');
+                        document.documentElement.classList.add('light');
+                } else {
+                        document.documentElement.classList.add('dark');
+                        document.documentElement.classList.remove('light');
+                }
+        </script>
+        <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap"
+                rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "precision-blue": "#013A58",
+                                                "primary-container": "#1b2b3a",
+                                                "surface-container-lowest": "#ffffff",
+                                                "tertiary-fixed-dim": "#d9c75f",
+                                                "primary": "#051625",
+                                                "safety-yellow": "#F2DF74",
+                                                "clinical-white": "#FFFFFF",
+                                                "on-secondary-fixed-variant": "#1b4b69",
+                                                "error": "#ba1a1a",
+                                                "primary-fixed": "#d3e4f8",
+                                                "on-error-container": "#93000a",
+                                                "tertiary": "#6b5f00",
+                                                "error-container": "#ffdad6",
+                                                "tertiary-container": "#bdac47",
+                                                "surface-container-low": "#eff4ff",
+                                                "on-secondary-container": "#34607f",
+                                                "machine-gray": "#EFEFEF",
+                                                "secondary-container": "#aed9fe",
+                                                "inverse-surface": "#233144",
+                                                "inverse-primary": "#b8c8dc",
+                                                "secondary": "#376282",
+                                                "on-tertiary-fixed": "#201c00",
+                                                "surface-variant": "#d5e3fd",
+                                                "on-tertiary-fixed-variant": "#514700",
+                                                "on-tertiary": "#ffffff",
+                                                "outline": "#74777c",
+                                                "secondary-fixed-dim": "#a0cbf0",
+                                                "on-primary-fixed-variant": "#384858",
+                                                "inverse-on-surface": "#ebf1ff",
+                                                "on-primary-fixed": "#0c1d2b",
+                                                "secondary-fixed": "#cbe6ff",
+                                                "industrial-navy": "#1B2B3A",
+                                                "surface-container-highest": "#d5e3fd",
+                                                "on-error": "#ffffff",
+                                                "on-background": "#0d1c2f",
+                                                "on-surface-variant": "#43474c",
+                                                "on-primary": "#ffffff",
+                                                "surface": "#f8f9ff",
+                                                "surface-dim": "#ccdbf4",
+                                                "on-primary-container": "#8292a5",
+                                                "on-surface": "#0d1c2f",
+                                                "primary-fixed-dim": "#b8c8dc",
+                                                "surface-bright": "#f8f9ff",
+                                                "background": "#f8f9ff",
+                                                "surface-container-high": "#dde9ff",
+                                                "surface-container": "#e6eeff",
+                                                "surface-tint": "#506071",
+                                                "on-tertiary-container": "#493f00",
+                                                "on-secondary": "#ffffff",
+                                                "outline-variant": "#c4c6cc",
+                                                "on-secondary-fixed": "#001e30",
+                                                "tertiary-fixed": "#f7e478"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {
+                                                "baseline": "4px",
+                                                "margin-mobile": "8px",
+                                                "margin-desktop": "32px",
+                                                "gutter": "24px",
+                                                "container-max": "1400px"
+                                        },
+                                        "fontFamily": {
+                                                "label-sm": [
+                                                        "JetBrains Mono"
+                                                ],
+                                                "body-md": [
+                                                        "Inter"
+                                                ],
+                                                "headline-lg-mobile": [
+                                                        "IBM Plex Sans"
+                                                ],
+                                                "headline-lg": [
+                                                        "IBM Plex Sans"
+                                                ],
+                                                "headline-md": [
+                                                        "IBM Plex Sans"
+                                                ],
+                                                "body-lg": [
+                                                        "Inter"
+                                                ],
+                                                "label-md": [
+                                                        "JetBrains Mono"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "label-sm": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "1.4",
+                                                                "letterSpacing": "0.05em",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "1.6",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "headline-lg-mobile": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "headline-lg": [
+                                                        "40px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "headline-md": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "1.3",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "1.6",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "label-md": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "1.4",
+                                                                "letterSpacing": "0.05em",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ]
+                                        }
+                                },
+                        },
+                }
+        </script>
+        <style>
+                html {
+                        scroll-behavior: smooth;
+                }
+
+                html.dark {
+                        color-scheme: dark;
+                }
+
+                .bg-pattern {
+                        background-image: radial-gradient(#c4c6cc 1px, transparent 1px);
+                        background-size: 24px 24px;
+                }
+
+                .dark .bg-pattern {
+                        background-image: radial-gradient(#334155 1px, transparent 1px);
+                }
+
+                .font-signature {
+                        font-family: 'Alex Brush', cursive;
+                }
+
+                .font-editorial-serif {
+                        font-family: 'Cormorant Garamond', Georgia, serif;
+                }
+
+                .font-modern-sans {
+                        font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+                }
+
+                .nav-link-indicator {
+                        position: relative;
+                }
+
+                .nav-link-indicator::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -4px;
+                        left: 50%;
+                        width: 0%;
+                        height: 2px;
+                        background: #c59b27;
+                        transform: translateX(-50%);
+                        transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                        border-radius: 9999px;
+                }
+
+                .nav-link-indicator.active::after,
+                .nav-link-indicator:hover::after {
+                        width: 100%;
+                }
+
+                .theme-toggle-btn {
+                        transition: all 0.25s ease;
+                }
+
+                .theme-toggle-btn:hover {
+                        transform: rotate(15deg) scale(1.08);
+                }
+
+                .cta-pill-btn {
+                        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                }
+
+                .cta-pill-btn:hover {
+                        transform: translateY(-1px);
+                        box-shadow: 0 4px 14px -2px rgba(27, 43, 58, 0.12);
+                }
+
+                .cta-pill-btn:hover .cta-arrow {
+                        transform: translateX(3px);
+                }
+
+                .cta-arrow {
+                        transition: transform 0.25s ease;
+                }
+
+                /* Light Mode Dark Boundary System */
+                :root {
+                        --component-border: #1B2B3A;
+                        --component-border-subtle: #2C3E50;
+                        --input-border: #3A4D62;
+                }
+
+                html.dark {
+                        --component-border: #2A3441;
+                        --component-border-subtle: #2A3441;
+                        --input-border: #2A3441;
+                }
+
+                /* Rich Dark Mode Gradient Theme */
+                html.dark body {
+                        background: radial-gradient(circle at 15% 15%, #152232 0%, #0c141d 45%, #070c12 100%) fixed !important;
+                }
+
+                .dark .bg-gradient-dark-hero {
+                        background: radial-gradient(1200px circle at 80% 20%, rgba(27, 43, 58, 0.45), transparent 60%),
+                                    radial-gradient(800px circle at 10% 80%, rgba(1, 58, 88, 0.25), transparent 50%);
+                }
+
+                .dark .dark-card-gradient {
+                        background: linear-gradient(145deg, rgba(24, 34, 46, 0.9) 0%, rgba(14, 20, 29, 0.95) 100%) !important;
+                }
+
+                /* Apply dark boundaries in light mode while preserving dark mode classes */
+                html:not(.dark) .border-machine-gray:not(.client-frame) {
+                        border-color: #1B2B3A !important;
+                }
+
+                html:not(.dark) input.border-machine-gray,
+                html:not(.dark) select.border-machine-gray,
+                html:not(.dark) textarea.border-machine-gray {
+                        border-color: #3A4D62 !important;
+                }
+
+                html:not(.dark) .divide-machine-gray > :not([hidden]) ~ :not([hidden]) {
+                        border-color: #1B2B3A !important;
+                }
+        </style>
+</head>
+
+<body
+        class="bg-[#F8F9FF] text-[#0D1C2F] dark:text-[#E2E8F0] font-body-md text-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed transition-colors duration-300">
+        <!-- TopNavBar -->
+        <nav
+                class="w-full top-0 sticky bg-[#FAF8F5]/95 dark:bg-[#121820]/95 backdrop-blur-md border-b border-[#EAE5DC] dark:border-[#2A3441] z-50 transition-colors duration-300">
+                <div class="flex justify-between items-center h-20 px-6 md:px-12 max-w-7xl mx-auto">
+                        <!-- Left: Elegant Branding Section -->
+                        <a href="#home"
+                                class="group flex flex-col justify-center text-left select-none decoration-transparent focus:outline-none">
+                                <div class="flex items-baseline gap-2">
+                                        <span
+                                                class="font-signature text-3xl sm:text-4xl text-[#1B2B3A] dark:text-[#F3F4F6] font-normal leading-none tracking-wide group-hover:text-[#B38A20] transition-colors duration-300">Mobin</span>
+                                        <span
+                                                class="font-editorial-serif text-2xl sm:text-3xl text-[#1B2B3A] dark:text-[#E5E7EB] font-semibold tracking-tight uppercase leading-none">Shaikh</span>
+                                </div>
+                                <span
+                                        class="font-modern-sans text-[10px] sm:text-[11px] uppercase tracking-[0.22em] text-[#6B7280] dark:text-[#9CA3AF] font-medium mt-1">
+                                        Machine Technician &bull; 26 Yrs Exp
+                                </span>
+                        </a>
+
+                        <!-- Center: Clean, Uppercase Sans-Serif Menu Links (Widely Spaced) -->
+                        <ul class="hidden lg:flex items-center space-x-10 xl:space-x-12">
+                                <li>
+                                        <a class="nav-link-indicator active font-modern-sans text-xs uppercase tracking-[0.22em] font-semibold text-[#1B2B3A] dark:text-[#F9FAFB] transition-colors duration-200 py-1"
+                                                href="#home">Home</a>
+                                </li>
+                                <li>
+                                        <a class="nav-link-indicator font-modern-sans text-xs uppercase tracking-[0.22em] font-medium text-[#4B5563] hover:text-[#1B2B3A] dark:text-[#9CA3AF] dark:hover:text-[#F3F4F6] transition-colors duration-200 py-1"
+                                                href="#experience">Experience</a>
+                                </li>
+                                <li>
+                                        <a class="nav-link-indicator font-modern-sans text-xs uppercase tracking-[0.22em] font-medium text-[#4B5563] hover:text-[#1B2B3A] dark:text-[#9CA3AF] dark:hover:text-[#F3F4F6] transition-colors duration-200 py-1"
+                                                href="#expertise">Expertise</a>
+                                </li>
+                                <li>
+                                        <a class="nav-link-indicator font-modern-sans text-xs uppercase tracking-[0.22em] font-medium text-[#4B5563] hover:text-[#1B2B3A] dark:text-[#9CA3AF] dark:hover:text-[#F3F4F6] transition-colors duration-200 py-1"
+                                                href="#achievements">Achievements</a>
+                                </li>
+                                <li>
+                                        <a class="nav-link-indicator font-modern-sans text-xs uppercase tracking-[0.22em] font-medium text-[#4B5563] hover:text-[#1B2B3A] dark:text-[#9CA3AF] dark:hover:text-[#F3F4F6] transition-colors duration-200 py-1"
+                                                href="#contact">Contact</a>
+                                </li>
+                        </ul>
+
+                        <!-- Right: Minimalist Dark-Mode Toggle & Pill Call-To-Action Button -->
+                        <div class="hidden sm:flex items-center gap-4 lg:gap-6">
+                                <!-- Minimalist Dark Mode Toggle -->
+                                <button id="themeToggleBtn" aria-label="Toggle Dark Mode"
+                                        class="theme-toggle-btn w-10 h-10 rounded-full flex items-center justify-center text-[#4B5563] hover:text-[#1B2B3A] dark:text-[#9CA3AF] dark:hover:text-[#F9FAFB] hover:bg-[#F0EBE1] dark:hover:bg-[#1E293B] border border-transparent hover:border-[#E2DDD3] dark:hover:border-[#334155] focus:outline-none transition-all">
+                                        <span class="material-symbols-outlined text-[20px] dark:hidden">dark_mode</span>
+                                        <span
+                                                class="material-symbols-outlined text-[20px] hidden dark:inline-block text-[#F2DF74]">light_mode</span>
+                                </button>
+
+                                <!-- Prominent Rounded Pill-Shaped CTA Button with Outline & Trailing Arrow -->
+                                <a href="#contact"
+                                        class="cta-pill-btn group/btn inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full border border-[#1B2B3A] dark:border-[#E5E7EB] bg-transparent hover:bg-[#1B2B3A] dark:hover:bg-[#F3F4F6] text-[#1B2B3A] hover:text-[#FAF8F5] dark:text-[#F3F4F6] dark:hover:text-[#121820] font-modern-sans text-xs uppercase tracking-[0.18em] font-semibold transition-all duration-300">
+                                        <span>Get in Touch</span>
+                                        <span
+                                                class="material-symbols-outlined text-sm font-semibold cta-arrow transition-transform duration-300">arrow_forward</span>
+                                </a>
+                        </div>
+
+                        <!-- Mobile Actions (Toggle + Hamburger) -->
+                        <div class="flex sm:hidden items-center gap-2">
+                                <button id="themeToggleBtnMobile" aria-label="Toggle Dark Mode"
+                                        class="w-9 h-9 rounded-full flex items-center justify-center text-[#4B5563] dark:text-[#9CA3AF] hover:bg-[#F0EBE1] dark:hover:bg-[#1E293B]">
+                                        <span class="material-symbols-outlined text-[18px] dark:hidden">dark_mode</span>
+                                        <span
+                                                class="material-symbols-outlined text-[18px] hidden dark:inline-block text-[#F2DF74]">light_mode</span>
+                                </button>
+                                <button id="mobileMenuBtn" aria-label="Open Navigation Menu"
+                                        class="text-[#1B2B3A] dark:text-[#FAF8F5] p-2 hover:bg-[#F0EBE1] dark:hover:bg-[#1E293B] rounded-lg">
+                                        <span class="material-symbols-outlined text-2xl">menu</span>
+                                </button>
+                        </div>
+                </div>
+
+                <!-- Mobile Dropdown Menu -->
+                <div id="mobileMenu"
+                        class="hidden lg:hidden bg-[#FAF8F5] dark:bg-[#121820] border-b border-[#EAE5DC] dark:border-[#2A3441] px-6 py-5 transition-all">
+                        <ul class="flex flex-col space-y-4">
+                                <li><a class="block font-modern-sans text-xs uppercase tracking-[0.2em] font-semibold text-[#1B2B3A] dark:text-[#F9FAFB] py-1.5"
+                                                href="#home">Home</a></li>
+                                <li><a class="block font-modern-sans text-xs uppercase tracking-[0.2em] font-medium text-[#4B5563] dark:text-[#9CA3AF] py-1.5"
+                                                href="#experience">Experience</a></li>
+                                <li><a class="block font-modern-sans text-xs uppercase tracking-[0.2em] font-medium text-[#4B5563] dark:text-[#9CA3AF] py-1.5"
+                                                href="#expertise">Expertise</a></li>
+                                <li><a class="block font-modern-sans text-xs uppercase tracking-[0.2em] font-medium text-[#4B5563] dark:text-[#9CA3AF] py-1.5"
+                                                href="#achievements">Achievements</a></li>
+                                <li><a class="block font-modern-sans text-xs uppercase tracking-[0.2em] font-medium text-[#4B5563] dark:text-[#9CA3AF] py-1.5"
+                                                href="#contact">Contact</a></li>
+                        </ul>
+                        <div class="mt-5 pt-4 border-t border-[#EAE5DC] dark:border-[#2A3441]">
+                                <a href="#contact"
+                                        class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full border border-[#1B2B3A] dark:border-[#E5E7EB] text-[#1B2B3A] dark:text-[#F3F4F6] font-modern-sans text-xs uppercase tracking-[0.18em] font-semibold">
+                                        <span>Get in Touch</span>
+                                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                </a>
+                        </div>
+                </div>
+        </nav>
+        <!-- Main Content Canvas -->
+        <main
+                class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-6 pb-12 md:pt-10 md:pb-24 space-y-24 md:space-y-32">
+                <!-- Section 1: Home -->
+                <section class="scroll-mt-24" id="home">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16">
+                                <div class="lg:col-span-6 space-y-6">
+                                        <div class="space-y-3">
+                                                <h1
+                                                        class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-industrial-navy dark:text-[#F3F4F6] font-bold">
+                                                        Mobin Jiaoddin Shaikh
+                                                </h1>
+                                                <h2 class="font-headline-md text-headline-md text-on-surface-variant dark:text-[#9CA3AF]">
+                                                        Machine Technician | 26 Years of Pharmaceutical Excellence
+                                                </h2>
+                                        </div>
+                                        <p class="font-body-lg text-body-lg text-on-surface dark:text-[#CBD5E1] max-w-2xl">
+                                                Dedicated and precise machine technician with extensive experience in
+                                                granulation, manufacturing processes, and complex machinery setup. A
+                                                track record of supervising over 500 personnel while maintaining
+                                                rigorous adherence to SOPs and ALCOA principles.
+                                        </p>
+                                        <!-- Hero CTA Buttons -->
+                                        <div class="flex flex-wrap items-center gap-4 pt-1">
+                                                <a href="#experience"
+                                                        class="inline-flex items-center justify-center gap-2 bg-industrial-navy hover:bg-precision-blue dark:bg-[#1E293B] dark:hover:bg-[#334155] text-clinical-white font-label-md text-label-md px-6 py-3 rounded border border-industrial-navy dark:border-[#475569] shadow-sm hover:shadow transition-all duration-200 uppercase tracking-wider font-semibold group">
+                                                        <span>VIEW EXPERIENCE</span>
+                                                        <span
+                                                                class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform duration-200">arrow_forward</span>
+                                                </a>
+                                                <button onclick="window.print()"
+                                                        class="inline-flex items-center justify-center gap-2 bg-clinical-white dark:bg-[#121820] hover:bg-surface-container-low dark:hover:bg-[#1E293B] text-industrial-navy dark:text-[#F3F4F6] font-label-md text-label-md px-6 py-3 rounded border border-machine-gray dark:border-[#2A3441] hover:border-industrial-navy/40 shadow-sm transition-all duration-200 uppercase tracking-wider font-semibold group">
+                                                        <span>DOWNLOAD CV</span>
+                                                        <span
+                                                                class="material-symbols-outlined text-[18px] group-hover:translate-y-0.5 transition-transform duration-200">arrow_downward</span>
+                                                </button>
+                                        </div>
+                                        <!-- KPI Cards -->
+                                        <div class="flex flex-wrap gap-4 pt-2">
+                                                <div
+                                                        class="flex flex-col border border-machine-gray dark:border-[#2A3441] bg-clinical-white dark:bg-[#121820] p-4 rounded min-w-[130px] flex-1 shadow-xs">
+                                                        <span
+                                                                class="font-headline-md text-headline-md text-industrial-navy dark:text-[#F3F4F6] font-bold">26</span>
+                                                        <span
+                                                                class="font-label-sm text-label-sm text-on-surface-variant dark:text-[#9CA3AF]">Years
+                                                                Industry Exp</span>
+                                                </div>
+                                                <div
+                                                        class="flex flex-col border border-machine-gray dark:border-[#2A3441] bg-clinical-white dark:bg-[#121820] p-4 rounded min-w-[130px] flex-1 shadow-xs">
+                                                        <span
+                                                                class="font-headline-md text-headline-md text-industrial-navy dark:text-[#F3F4F6] font-bold">22+</span>
+                                                        <span
+                                                                class="font-label-sm text-label-sm text-on-surface-variant dark:text-[#9CA3AF]">Years
+                                                                Machine Ops</span>
+                                                </div>
+                                                <div
+                                                        class="flex flex-col border border-machine-gray dark:border-[#2A3441] bg-clinical-white dark:bg-[#121820] p-4 rounded min-w-[130px] flex-1 shadow-xs">
+                                                        <span
+                                                                class="font-headline-md text-headline-md text-industrial-navy dark:text-[#F3F4F6] font-bold">500+</span>
+                                                        <span
+                                                                class="font-label-sm text-label-sm text-on-surface-variant dark:text-[#9CA3AF]">Supervised</span>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="lg:col-span-6 flex justify-center lg:justify-end">
+                                        <div
+                                                class="client-frame relative w-full max-w-[560px] h-[440px] sm:h-[500px] md:h-[540px] lg:h-[560px] border border-transparent dark:border-[#2A3441] p-2 bg-transparent dark:bg-[#121820] rounded-lg overflow-hidden group">
+                                                <div
+                                                        class="w-full h-full bg-gradient-to-b from-surface-container-low/30 to-surface-container-low/70 dark:from-[#1E293B]/40 dark:to-[#0B1118]/80 flex items-end justify-center overflow-hidden rounded">
+                                                        <img class="w-full h-full object-cover object-top scale-105 group-hover:scale-110 transition-all duration-500"
+                                                                alt="Mobin Jiaoddin Shaikh - Machine Technician"
+                                                                src="client.png" />
+                                                </div>
+                                                <div
+                                                        class="absolute inset-0 pointer-events-none rounded">
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- Technical Expertise & Professional Qualities (Bento Grid) -->
+                        <div class="space-y-8">
+                                <div class="border-b border-machine-gray dark:border-[#2A3441] pb-4 mb-8">
+                                        <h3 class="font-headline-md text-headline-md text-industrial-navy dark:text-[#F3F4F6] font-bold">Core
+                                                Competencies &amp; Qualities</h3>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-stretch">
+                                        <!-- Core Competencies -->
+                                        <div
+                                                class="md:col-span-8 border border-machine-gray dark:border-[#2A3441] bg-clinical-white dark:bg-[#121820] p-6 sm:p-8 space-y-6 rounded shadow-sm">
+                                                <div
+                                                        class="flex items-center justify-between border-b border-machine-gray/70 dark:border-[#2A3441] pb-4">
+                                                        <div class="flex items-center gap-3 text-industrial-navy dark:text-[#F3F4F6]">
+                                                                <span class="material-symbols-outlined text-2xl text-industrial-navy dark:text-[#93C5FD]"
+                                                                        style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+                                                                <h4 class="font-headline-md text-headline-md font-bold">
+                                                                        Technical Expertise</h4>
+                                                        </div>
+                                                        <span
+                                                                class="font-label-sm text-[11px] uppercase tracking-wider text-industrial-navy dark:text-[#F3F4F6] font-bold px-3 py-1 bg-surface-container dark:bg-[#1E293B] border border-industrial-navy/30 dark:border-[#475569] rounded-md shadow-xs">High
+                                                                Proficiency</span>
+                                                </div>
+
+                                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                                        <!-- Skill Card 1 -->
+                                                        <div
+                                                                class="p-4 rounded border border-machine-gray dark:border-[#2A3441] bg-surface-container-lowest dark:bg-[#0B1118] hover:border-industrial-navy/30 dark:hover:border-[#93C5FD]/40 transition-all duration-200 flex flex-col justify-between space-y-3">
+                                                                <div>
+                                                                        <span
+                                                                                class="font-label-md text-label-md text-industrial-navy dark:text-[#F3F4F6] font-semibold block">Granulation
+                                                                                Processes</span>
+                                                                        <span
+                                                                                class="font-body-sm text-body-sm text-on-surface-variant dark:text-[#9CA3AF] text-xs mt-1 block">Expertise
+                                                                                in wet &amp; dry granulation
+                                                                                techniques.</span>
+                                                                </div>
+                                                                <div class="w-full space-y-1.5 pt-1">
+                                                                        <div
+                                                                                class="w-full bg-surface-container-high dark:bg-[#1E293B] rounded-full h-1.5 overflow-hidden">
+                                                                                <div class="bg-industrial-navy dark:bg-[#93C5FD] h-1.5 rounded-full transition-all duration-700"
+                                                                                        style="width: 96%;"></div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- Skill Card 2 -->
+                                                        <div
+                                                                class="p-4 rounded border border-machine-gray dark:border-[#2A3441] bg-surface-container-lowest dark:bg-[#0B1118] hover:border-industrial-navy/30 dark:hover:border-[#93C5FD]/40 transition-all duration-200 flex flex-col justify-between space-y-3">
+                                                                <div>
+                                                                        <span
+                                                                                class="font-label-md text-label-md text-industrial-navy dark:text-[#F3F4F6] font-semibold block">Machinery
+                                                                                Setup</span>
+                                                                        <span
+                                                                                class="font-body-sm text-body-sm text-on-surface-variant dark:text-[#9CA3AF] text-xs mt-1 block">Precise
+                                                                                calibration &amp; preparation for
+                                                                                production runs.</span>
+                                                                </div>
+                                                                <div class="w-full space-y-1.5 pt-1">
+                                                                        <div
+                                                                                class="w-full bg-surface-container-high dark:bg-[#1E293B] rounded-full h-1.5 overflow-hidden">
+                                                                                <div class="bg-industrial-navy dark:bg-[#93C5FD] h-1.5 rounded-full transition-all duration-700"
+                                                                                        style="width: 95%;"></div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- Skill Card 3 -->
+                                                        <div
+                                                                class="p-4 rounded border border-machine-gray dark:border-[#2A3441] bg-surface-container-lowest dark:bg-[#0B1118] hover:border-industrial-navy/30 dark:hover:border-[#93C5FD]/40 transition-all duration-200 flex flex-col justify-between space-y-3">
+                                                                <div>
+                                                                        <span
+                                                                                class="font-label-md text-label-md text-industrial-navy dark:text-[#F3F4F6] font-semibold block">Manufacturing
+                                                                                Operations</span>
+                                                                        <span
+                                                                                class="font-body-sm text-body-sm text-on-surface-variant dark:text-[#9CA3AF] text-xs mt-1 block">Oversight
+                                                                                of complex pharmaceutical production
+                                                                                lines.</span>
+                                                                </div>
+                                                                <div class="w-full space-y-1.5 pt-1">
+                                                                        <div
+                                                                                class="w-full bg-surface-container-high dark:bg-[#1E293B] rounded-full h-1.5 overflow-hidden">
+                                                                                <div class="bg-industrial-navy dark:bg-[#93C5FD] h-1.5 rounded-full transition-all duration-700"
+                                                                                        style="width: 97%;"></div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- Skill Card 4 -->
+                                                        <div
+                                                                class="p-4 rounded border border-machine-gray dark:border-[#2A3441] bg-surface-container-lowest dark:bg-[#0B1118] hover:border-industrial-navy/30 dark:hover:border-[#93C5FD]/40 transition-all duration-200 flex flex-col justify-between space-y-3">
+                                                                <div>
+                                                                        <span
+                                                                                class="font-label-md text-label-md text-industrial-navy dark:text-[#F3F4F6] font-semibold block">Troubleshooting</span>
+                                                                        <span
+                                                                                class="font-body-sm text-body-sm text-on-surface-variant dark:text-[#9CA3AF] text-xs mt-1 block">Rapid
+                                                                                identification &amp; resolution of
+                                                                                mechanical faults.</span>
+                                                                </div>
+                                                                <div class="w-full space-y-1.5 pt-1">
+                                                                        <div
+                                                                                class="w-full bg-surface-container-high dark:bg-[#1E293B] rounded-full h-1.5 overflow-hidden">
+                                                                                <div class="bg-industrial-navy dark:bg-[#93C5FD] h-1.5 rounded-full transition-all duration-700"
+                                                                                        style="width: 92%;"></div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <!-- Professional Qualities -->
+                                        <div
+                                                class="md:col-span-4 border border-machine-gray dark:border-[#2A3441] bg-clinical-white dark:bg-[#121820] p-6 sm:p-8 space-y-5 rounded shadow-sm flex flex-col justify-between">
+                                                <div>
+                                                        <div
+                                                                class="flex items-center gap-3 text-industrial-navy dark:text-[#F3F4F6] mb-5 border-b border-machine-gray/70 dark:border-[#2A3441] pb-4">
+                                                                <span class="material-symbols-outlined text-2xl text-industrial-navy dark:text-[#F2DF74]"
+                                                                        style="font-variation-settings: 'FILL' 1;">military_tech</span>
+                                                                <h4 class="font-headline-md text-headline-md font-bold">
+                                                                        Professional Qualities</h4>
+                                                        </div>
+                                                        <div class="space-y-0 divide-y divide-machine-gray/70 dark:divide-[#2A3441]">
+                                                                <!-- Item 1 -->
+                                                                <div
+                                                                        class="relative py-3.5 flex items-center justify-between group">
+                                                                        <span
+                                                                                class="font-body-md text-on-surface dark:text-[#F3F4F6] font-semibold z-10">Hardworking</span>
+                                                                        <span
+                                                                                class="font-headline-md text-3xl font-black text-industrial-navy/40 dark:text-[#94A3B8]/30 group-hover:text-industrial-navy/60 dark:group-hover:text-[#F3F4F6]/50 transition-colors select-none font-mono tracking-tighter">01</span>
+                                                                </div>
+                                                                <!-- Item 2 -->
+                                                                <div
+                                                                        class="relative py-3.5 flex items-center justify-between group">
+                                                                        <span
+                                                                                class="font-body-md text-on-surface dark:text-[#F3F4F6] font-semibold z-10">Punctual</span>
+                                                                        <span
+                                                                                class="font-headline-md text-3xl font-black text-industrial-navy/40 dark:text-[#94A3B8]/30 group-hover:text-industrial-navy/60 dark:group-hover:text-[#F3F4F6]/50 transition-colors select-none font-mono tracking-tighter">02</span>
+                                                                </div>
+                                                                <!-- Item 3 -->
+                                                                <div
+                                                                        class="relative py-3.5 flex items-center justify-between group">
+                                                                        <span
+                                                                                class="font-body-md text-on-surface dark:text-[#F3F4F6] font-semibold z-10">Strong
+                                                                                Observation</span>
+                                                                        <span
+                                                                                class="font-headline-md text-3xl font-black text-industrial-navy/40 dark:text-[#94A3B8]/30 group-hover:text-industrial-navy/60 dark:group-hover:text-[#F3F4F6]/50 transition-colors select-none font-mono tracking-tighter">03</span>
+                                                                </div>
+                                                                <!-- Item 4 -->
+                                                                <div
+                                                                        class="relative py-3.5 flex items-center justify-between group">
+                                                                        <span
+                                                                                class="font-body-md text-on-surface dark:text-[#F3F4F6] font-semibold z-10">SOP
+                                                                                &amp; ALCOA Focused</span>
+                                                                        <span
+                                                                                class="font-headline-md text-3xl font-black text-industrial-navy/40 dark:text-[#94A3B8]/30 group-hover:text-industrial-navy/60 dark:group-hover:text-[#F3F4F6]/50 transition-colors select-none font-mono tracking-tighter">04</span>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Section 2: Experience -->
+                <section class="scroll-mt-24" id="experience">
+                        <div class="mb-16 border-b border-machine-gray dark:border-[#2A3441] pb-8">
+                                <h2
+                                        class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-industrial-navy dark:text-[#F3F4F6] mb-4 font-bold">
+                                        Professional Track Record</h2>
+                                <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-[#9CA3AF] max-w-2xl">
+                                        A chronological overview of 26+ years of operational excellence in
+                                        pharmaceutical machine operation, supervision, and stringent compliance
+                                        management.
+                                </p>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+                                <!-- Left Column: Timeline -->
+                                <div class="lg:col-span-7 flex flex-col">
+                                        <h3
+                                                class="font-headline-md text-headline-md text-industrial-navy dark:text-[#F3F4F6] mb-8 flex items-center gap-2 font-bold">
+                                                <span
+                                                        class="material-symbols-outlined text-industrial-navy dark:text-[#93C5FD]">history</span>
+                                                Career Progression
+                                        </h3>
+                                        <div class="relative pl-6 space-y-10 flex-1">
+                                                <!-- Continuous Vertical Connecting Line -->
+                                                <div
+                                                        class="absolute left-[7px] top-3 bottom-4 w-[2px] bg-industrial-navy/20 dark:bg-white/20">
+                                                </div>
+
+                                                <!-- Timeline Item 1 -->
+                                                <div class="relative pl-6 group">
+                                                        <div
+                                                                class="absolute left-[-23px] top-1.5 w-4 h-4 bg-industrial-navy dark:bg-[#93C5FD] rounded-full border-4 border-background dark:border-[#0B1118] shadow-xs">
+                                                        </div>
+                                                        <div
+                                                                class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                                                <h4
+                                                                        class="font-headline-md text-lg sm:text-xl font-bold text-industrial-navy dark:text-[#F3F4F6]">
+                                                                        VS International Pvt. Ltd.</h4>
+                                                                <span
+                                                                        class="font-label-sm text-xs font-semibold bg-industrial-navy dark:bg-[#1E293B] text-clinical-white dark:text-[#F3F4F6] border border-transparent dark:border-[#475569] px-2.5 py-1 rounded shadow-2xs inline-flex items-center gap-1">
+                                                                        <span
+                                                                                class="w-1.5 h-1.5 rounded-full bg-safety-yellow animate-pulse"></span>
+                                                                        Present (1 Year)
+                                                                </span>
+                                                        </div>
+                                                        <div
+                                                                class="font-body-md text-primary dark:text-[#93C5FD] font-semibold mb-2">
+                                                                Machine Technician</div>
+                                                        <p
+                                                                class="font-body-md text-sm text-on-surface-variant dark:text-[#9CA3AF] leading-relaxed">
+                                                                Currently leading machine operations with a focus on
+                                                                precision execution and maintaining high standards of
+                                                                production output within strict regulatory frameworks.
+                                                        </p>
+                                                </div>
+
+                                                <!-- Timeline Item 2 -->
+                                                <div class="relative pl-6 group">
+                                                        <div
+                                                                class="absolute left-[-23px] top-1.5 w-4 h-4 bg-industrial-navy dark:bg-[#93C5FD] rounded-full border-4 border-background dark:border-[#0B1118] shadow-xs">
+                                                        </div>
+                                                        <div
+                                                                class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                                                <h4
+                                                                        class="font-headline-md text-lg sm:text-xl font-bold text-industrial-navy dark:text-[#F3F4F6]">
+                                                                        Ipca Laboratories Ltd.</h4>
+                                                                <span
+                                                                        class="font-label-sm text-xs font-semibold bg-surface-container dark:bg-[#1E293B] text-industrial-navy dark:text-[#F3F4F6] border border-industrial-navy/20 dark:border-[#475569] px-2.5 py-1 rounded shadow-2xs">
+                                                                        11 Years
+                                                                </span>
+                                                        </div>
+                                                        <div
+                                                                class="font-body-md text-primary dark:text-[#93C5FD] font-semibold mb-2">
+                                                                Senior Machine Technician</div>
+                                                        <p
+                                                                class="font-body-md text-sm text-on-surface-variant dark:text-[#9CA3AF] leading-relaxed">
+                                                                Served over a decade managing complex machinery,
+                                                                troubleshooting operational issues, and ensuring
+                                                                seamless production cycles while adhering to rigid
+                                                                pharmaceutical standards.
+                                                        </p>
+                                                </div>
+
+                                                <!-- Timeline Item 3 -->
+                                                <div class="relative pl-6 group">
+                                                        <div
+                                                                class="absolute left-[-23px] top-1.5 w-4 h-4 bg-industrial-navy dark:bg-[#93C5FD] rounded-full border-4 border-background dark:border-[#0B1118] shadow-xs">
+                                                        </div>
+                                                        <div
+                                                                class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                                                <h4
+                                                                        class="font-headline-md text-lg sm:text-xl font-bold text-industrial-navy dark:text-[#F3F4F6]">
+                                                                        Lyka Labs Ltd.</h4>
+                                                                <span
+                                                                        class="font-label-sm text-xs font-semibold bg-surface-container dark:bg-[#1E293B] text-industrial-navy dark:text-[#F3F4F6] border border-industrial-navy/20 dark:border-[#475569] px-2.5 py-1 rounded shadow-2xs">
+                                                                        14 Years
+                                                                </span>
+                                                        </div>
+                                                        <div
+                                                                class="font-body-md text-primary dark:text-[#93C5FD] font-semibold mb-2">
+                                                                Skilled Operator</div>
+                                                        <p
+                                                                class="font-body-md text-sm text-on-surface-variant dark:text-[#9CA3AF] leading-relaxed">
+                                                                Foundational experience operating essential
+                                                                pharmaceutical manufacturing equipment. Developed core
+                                                                competencies in continuous process monitoring and
+                                                                efficiency optimization.
+                                                        </p>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <!-- Right Column: Unified Sidebar System -->
+                                <div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+                                        <!-- Unified Sidebar Container -->
+                                        <div
+                                                class="border border-machine-gray dark:border-[#2A3441] bg-clinical-white dark:bg-[#121820] rounded-lg shadow-sm overflow-hidden flex flex-col h-full justify-between">
+                                                <!-- Leadership Milestone Feature Banner -->
+                                                <div
+                                                        class="bg-industrial-navy dark:bg-[#1E293B] p-6 text-clinical-white border-b border-on-primary-fixed-variant dark:border-[#334155]">
+                                                        <div class="flex items-center gap-2.5 mb-3">
+                                                                <span class="material-symbols-outlined text-safety-yellow text-2xl"
+                                                                        style="font-variation-settings: 'FILL' 1;">stars</span>
+                                                                <h4
+                                                                        class="font-headline-md text-lg font-bold text-clinical-white">
+                                                                        Leadership Milestone</h4>
+                                                        </div>
+                                                        <p
+                                                                class="font-body-md text-sm text-surface-container-high dark:text-[#CBD5E1] leading-relaxed">
+                                                                Successfully supervised and guided an extensive team of
+                                                                <strong class="text-safety-yellow font-semibold">500+
+                                                                        officers, operators, and workers</strong> across
+                                                                shift operations, fostering a culture of technical rigor
+                                                                and safety.
+                                                        </p>
+                                                </div>
+
+                                                <!-- Core Responsibilities List Section -->
+                                                <div class="p-6 space-y-5 flex-1 bg-clinical-white dark:bg-[#121820]">
+                                                        <div
+                                                                class="flex items-center gap-2 text-industrial-navy dark:text-[#F3F4F6] border-b border-machine-gray dark:border-[#2A3441] pb-3">
+                                                                <span class="material-symbols-outlined text-xl text-industrial-navy dark:text-[#93C5FD]"
+                                                                        style="font-variation-settings: 'FILL' 1;">checklist</span>
+                                                                <h4
+                                                                        class="font-headline-md text-base font-bold text-industrial-navy dark:text-[#F3F4F6]">
+                                                                        Core Responsibilities</h4>
+                                                        </div>
+                                                        <ul class="space-y-4">
+                                                                <li class="flex items-start gap-3">
+                                                                        <div
+                                                                                class="p-1.5 bg-surface-container-low dark:bg-[#1E293B] border border-machine-gray dark:border-[#2A3441] rounded text-industrial-navy dark:text-[#93C5FD] flex items-center justify-center shrink-0 mt-0.5">
+                                                                                <span
+                                                                                        class="material-symbols-outlined text-base">precision_manufacturing</span>
+                                                                        </div>
+                                                                        <div>
+                                                                                <div
+                                                                                        class="font-body-md text-sm font-bold text-industrial-navy dark:text-[#F3F4F6]">
+                                                                                        Granulation Control</div>
+                                                                                <div
+                                                                                        class="font-label-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] mt-0.5">
+                                                                                        Strict adherence to BMR
+                                                                                        protocols</div>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="flex items-start gap-3">
+                                                                        <div
+                                                                                class="p-1.5 bg-surface-container-low dark:bg-[#1E293B] border border-machine-gray dark:border-[#2A3441] rounded text-industrial-navy dark:text-[#93C5FD] flex items-center justify-center shrink-0 mt-0.5">
+                                                                                <span
+                                                                                        class="material-symbols-outlined text-base">rule</span>
+                                                                        </div>
+                                                                        <div>
+                                                                                <div
+                                                                                        class="font-body-md text-sm font-bold text-industrial-navy dark:text-[#F3F4F6]">
+                                                                                        SOP Compliance</div>
+                                                                                <div
+                                                                                        class="font-label-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] mt-0.5">
+                                                                                        100% execution to standard
+                                                                                        operating procedures</div>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="flex items-start gap-3">
+                                                                        <div
+                                                                                class="p-1.5 bg-surface-container-low dark:bg-[#1E293B] border border-machine-gray dark:border-[#2A3441] rounded text-industrial-navy dark:text-[#93C5FD] flex items-center justify-center shrink-0 mt-0.5">
+                                                                                <span
+                                                                                        class="material-symbols-outlined text-base">database</span>
+                                                                        </div>
+                                                                        <div>
+                                                                                <div
+                                                                                        class="font-body-md text-sm font-bold text-industrial-navy dark:text-[#F3F4F6]">
+                                                                                        Data Integrity</div>
+                                                                                <div
+                                                                                        class="font-label-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] mt-0.5">
+                                                                                        Accurate logging and reporting
+                                                                                        mechanisms</div>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="flex items-start gap-3">
+                                                                        <div
+                                                                                class="p-1.5 bg-surface-container-low dark:bg-[#1E293B] border border-machine-gray dark:border-[#2A3441] rounded text-industrial-navy dark:text-[#93C5FD] flex items-center justify-center shrink-0 mt-0.5">
+                                                                                <span
+                                                                                        class="material-symbols-outlined text-base">health_and_safety</span>
+                                                                        </div>
+                                                                        <div>
+                                                                                <div
+                                                                                        class="font-body-md text-sm font-bold text-industrial-navy dark:text-[#F3F4F6]">
+                                                                                        Safety &amp; Hygiene</div>
+                                                                                <div
+                                                                                        class="font-label-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] mt-0.5">
+                                                                                        Maintaining sterile and secure
+                                                                                        environments</div>
+                                                                        </div>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Section 3: Expertise -->
+                <section class="scroll-mt-24 bg-pattern -mx-margin-mobile md:-mx-margin-desktop px-margin-mobile md:px-margin-desktop py-14 md:py-20 rounded-xl border border-machine-gray/80 dark:border-[#2A3441] relative"
+                        id="expertise">
+                        
+                        <!-- 1. Editorial Section Intro with Major 30+ Years Proof Point -->
+                        <div class="mb-14 border-b border-machine-gray/80 dark:border-[#2A3441] pb-10">
+                                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+                                        <div class="lg:col-span-8 space-y-3">
+                                                <div class="inline-flex items-center gap-2">
+                                                        <span class="w-2 h-2 rounded-full bg-industrial-navy dark:bg-[#93C5FD]"></span>
+                                                        <span class="font-label-sm text-xs font-bold uppercase tracking-[0.2em] text-industrial-navy dark:text-[#93C5FD]">Technical Authority</span>
+                                                </div>
+                                                <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-industrial-navy dark:text-[#F3F4F6] tracking-tight">
+                                                        Technical Expertise
+                                                </h2>
+                                                <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-[#CBD5E1] max-w-2xl leading-relaxed">
+                                                        Comprehensive knowledge and hands-on proficiency across the pharmaceutical manufacturing lifecycle. Engineered for precision, compliance, and operational excellence.
+                                                </p>
+                                        </div>
+                                        <div class="lg:col-span-4 flex lg:justify-end">
+                                                <div class="border-l-2 lg:border-l-0 lg:border-r-2 border-industrial-navy dark:border-[#93C5FD] pl-4 lg:pl-0 lg:pr-6 text-left lg:text-right py-1">
+                                                        <span class="font-headline-lg text-4xl sm:text-5xl font-black text-industrial-navy dark:text-[#F3F4F6] tracking-tight leading-none block font-mono">26+</span>
+                                                        <span class="font-label-sm text-xs uppercase tracking-[0.16em] text-industrial-navy dark:text-[#93C5FD] font-bold block mt-1">Years Field Experience</span>
+                                                        <span class="font-body-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] block mt-0.5">Hands-on pharmaceutical manufacturing</span>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- 2. Core Manufacturing Expertise: Sequential Process Strip -->
+                        <div class="mb-16 space-y-6">
+                                <div class="flex items-center justify-between border-b border-machine-gray dark:border-[#2A3441] pb-3">
+                                        <div class="flex items-center gap-2 text-industrial-navy dark:text-[#F3F4F6]">
+                                                <span class="material-symbols-outlined text-xl text-industrial-navy dark:text-[#93C5FD]">precision_manufacturing</span>
+                                                <h3 class="font-headline-md text-base font-bold uppercase tracking-wider text-industrial-navy dark:text-[#F3F4F6]">Core Manufacturing Process Workflow</h3>
+                                        </div>
+                                        <span class="font-label-sm text-[11px] font-semibold text-outline dark:text-[#9CA3AF] uppercase tracking-widest hidden sm:inline-block">End-to-End Execution</span>
+                                </div>
+
+                                <!-- Connected Sequential Workflow -->
+                                <div class="grid grid-cols-1 md:grid-cols-5 gap-3 relative">
+                                        <!-- Step 01 -->
+                                        <div class="group relative p-4 rounded-lg bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] hover:border-industrial-navy dark:hover:border-[#93C5FD] transition-all duration-300 flex flex-col justify-between space-y-3 hover:shadow-xs">
+                                                <div class="flex items-center justify-between">
+                                                        <span class="font-headline-md text-2xl font-black text-industrial-navy/30 dark:text-[#94A3B8]/30 group-hover:text-industrial-navy dark:group-hover:text-[#93C5FD] transition-colors font-mono">01</span>
+                                                        <span class="material-symbols-outlined text-base text-outline/50 dark:text-[#94A3B8]/50 group-hover:text-industrial-navy dark:group-hover:text-[#93C5FD] group-hover:translate-x-0.5 transition-all hidden md:inline-block">arrow_forward</span>
+                                                </div>
+                                                <div>
+                                                        <h4 class="font-body-md text-sm font-bold text-industrial-navy dark:text-[#F3F4F6] leading-snug">Granulation</h4>
+                                                        <p class="font-label-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] mt-1 group-hover:text-industrial-navy dark:group-hover:text-[#93C5FD] transition-colors">Wet &amp; dry granulation</p>
+                                                </div>
+                                        </div>
+
+                                        <!-- Step 02 -->
+                                        <div class="group relative p-4 rounded-lg bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] hover:border-industrial-navy dark:hover:border-[#93C5FD] transition-all duration-300 flex flex-col justify-between space-y-3 hover:shadow-xs">
+                                                <div class="flex items-center justify-between">
+                                                        <span class="font-headline-md text-2xl font-black text-industrial-navy/30 dark:text-[#94A3B8]/30 group-hover:text-industrial-navy dark:group-hover:text-[#93C5FD] transition-colors font-mono">02</span>
+                                                        <span class="material-symbols-outlined text-base text-outline/50 dark:text-[#94A3B8]/50 group-hover:text-industrial-navy dark:group-hover:text-[#93C5FD] group-hover:translate-x-0.5 transition-all hidden md:inline-block">arrow_forward</span>
+                                                </div>
+                                                <div>
+                                                        <h4 class="font-body-md text-sm font-bold text-industrial-navy dark:text-[#F3F4F6] leading-snug">Precision Blending</h4>
+                                                        <p class="font-label-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] mt-1 group-hover:text-industrial-navy dark:group-hover:text-[#93C5FD] transition-colors">Homogeneous active blend</p>
+                                                </div>
+                                        </div>
+
+                                        <!-- Step 03 -->
+                                        <div class="group relative p-4 rounded-lg bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] hover:border-industrial-navy dark:hover:border-[#93C5FD] transition-all duration-300 flex flex-col justify-between space-y-3 hover:shadow-xs">
+                                                <div class="flex items-center justify-between">
+                                                        <span class="font-headline-md text-2xl font-black text-industrial-navy/30 dark:text-[#94A3B8]/30 group-hover:text-industrial-navy dark:group-hover:text-[#93C5FD] transition-colors font-mono">03</span>
+                                                        <span class="material-symbols-outlined text-base text-outline/50 dark:text-[#94A3B8]/50 group-hover:text-industrial-navy dark:group-hover:text-[#93C5FD] group-hover:translate-x-0.5 transition-all hidden md:inline-block">arrow_forward</span>
+                                                </div>
+                                                <div>
+                                                        <h4 class="font-body-md text-sm font-bold text-industrial-navy dark:text-[#F3F4F6] leading-snug">Tablet Compression</h4>
+                                                        <p class="font-label-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] mt-1 group-hover:text-industrial-navy dark:group-hover:text-[#93C5FD] transition-colors">High-speed rotary tooling</p>
+                                                </div>
+                                        </div>
+
+                                        <!-- Step 04 -->
+                                        <div class="group relative p-4 rounded-lg bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] hover:border-industrial-navy dark:hover:border-[#93C5FD] transition-all duration-300 flex flex-col justify-between space-y-3 hover:shadow-xs">
+                                                <div class="flex items-center justify-between">
+                                                        <span class="font-headline-md text-2xl font-black text-industrial-navy/30 dark:text-[#94A3B8]/30 group-hover:text-industrial-navy dark:group-hover:text-[#93C5FD] transition-colors font-mono">04</span>
+                                                        <span class="material-symbols-outlined text-base text-outline/50 dark:text-[#94A3B8]/50 group-hover:text-industrial-navy dark:group-hover:text-[#93C5FD] group-hover:translate-x-0.5 transition-all hidden md:inline-block">arrow_forward</span>
+                                                </div>
+                                                <div>
+                                                        <h4 class="font-body-md text-sm font-bold text-industrial-navy dark:text-[#F3F4F6] leading-snug">Capsule Filling</h4>
+                                                        <p class="font-label-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] mt-1 group-hover:text-industrial-navy dark:group-hover:text-[#93C5FD] transition-colors">Volumetric dosing &amp; sealing</p>
+                                                </div>
+                                        </div>
+
+                                        <!-- Step 05 -->
+                                        <div class="group relative p-4 rounded-lg bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] hover:border-industrial-navy dark:hover:border-[#93C5FD] transition-all duration-300 flex flex-col justify-between space-y-3 hover:shadow-xs">
+                                                <div class="flex items-center justify-between">
+                                                        <span class="font-headline-md text-2xl font-black text-industrial-navy/30 dark:text-[#94A3B8]/30 group-hover:text-industrial-navy dark:group-hover:text-[#93C5FD] transition-colors font-mono">05</span>
+                                                        <span class="material-symbols-outlined text-base text-industrial-navy dark:text-[#93C5FD] hidden md:inline-block" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                                </div>
+                                                <div>
+                                                        <h4 class="font-body-md text-sm font-bold text-industrial-navy dark:text-[#F3F4F6] leading-snug">Automated Cartoning</h4>
+                                                        <p class="font-label-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] mt-1 group-hover:text-industrial-navy dark:group-hover:text-[#93C5FD] transition-colors">Secondary packaging line</p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- 3. Machinery Expertise & Systems: Distinct Capability Panels with Progressive Disclosure -->
+                        <div class="mb-16 space-y-6">
+                                <div class="flex items-center justify-between border-b border-machine-gray dark:border-[#2A3441] pb-3">
+                                        <div class="flex items-center gap-2 text-industrial-navy dark:text-[#F3F4F6]">
+                                                <span class="material-symbols-outlined text-xl text-industrial-navy dark:text-[#93C5FD]">construction</span>
+                                                <h3 class="font-headline-md text-base font-bold uppercase tracking-wider text-industrial-navy dark:text-[#F3F4F6]">Specialized Machinery &amp; Tooling Systems</h3>
+                                        </div>
+                                        <span class="font-label-sm text-[11px] font-semibold text-outline dark:text-[#9CA3AF] uppercase tracking-widest hidden sm:inline-block">Setup &amp; Calibration</span>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                        <!-- Capability Panel 01 -->
+                                        <div class="p-6 rounded-xl bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] hover:border-industrial-navy/50 dark:hover:border-[#93C5FD]/50 transition-all duration-300 flex flex-col justify-between space-y-6 group hover:shadow-sm">
+                                                <div class="space-y-4">
+                                                        <div class="flex items-baseline justify-between border-b border-machine-gray/70 dark:border-[#2A3441] pb-3">
+                                                                <span class="font-headline-md text-3xl font-black text-industrial-navy/25 dark:text-[#94A3B8]/30 group-hover:text-industrial-navy/40 dark:group-hover:text-[#93C5FD] font-mono transition-colors">01</span>
+                                                                <span class="font-label-sm text-[10px] uppercase font-bold tracking-widest text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] px-2 py-0.5 rounded border border-machine-gray dark:border-[#2A3441]">Process Core</span>
+                                                        </div>
+                                                        <div>
+                                                                <h4 class="font-headline-md text-lg font-bold text-industrial-navy dark:text-[#F3F4F6]">Granulation &amp; Drying</h4>
+                                                                <p class="font-body-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] mt-1">Wet &amp; dry granulation setups, binder addition, and precise fluidization.</p>
+                                                        </div>
+                                                </div>
+
+                                                <!-- Systems Badge Strip -->
+                                                <div class="pt-4 border-t border-machine-gray/60 dark:border-[#2A3441] space-y-2">
+                                                        <span class="font-label-sm text-[10px] uppercase font-bold tracking-wider text-outline dark:text-[#94A3B8] block">Mastered Systems</span>
+                                                        <div class="flex flex-wrap gap-1.5">
+                                                                <span class="font-body-md text-xs font-semibold text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] px-2.5 py-1 rounded border border-machine-gray dark:border-[#2A3441] group-hover:border-industrial-navy/30 dark:group-hover:border-[#93C5FD]/30 transition-colors">Sionazer Mixer Granulator</span>
+                                                                <span class="font-body-md text-xs font-semibold text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] px-2.5 py-1 rounded border border-machine-gray dark:border-[#2A3441] group-hover:border-industrial-navy/30 dark:group-hover:border-[#93C5FD]/30 transition-colors">Rapid Mixer Granulator (RMG)</span>
+                                                                <span class="font-body-md text-xs font-semibold text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] px-2.5 py-1 rounded border border-machine-gray dark:border-[#2A3441] group-hover:border-industrial-navy/30 dark:group-hover:border-[#93C5FD]/30 transition-colors">Fluid Bed Dryer (FBD)</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <!-- Capability Panel 02 -->
+                                        <div class="p-6 rounded-xl bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] hover:border-industrial-navy/50 dark:hover:border-[#93C5FD]/50 transition-all duration-300 flex flex-col justify-between space-y-6 group hover:shadow-sm">
+                                                <div class="space-y-4">
+                                                        <div class="flex items-baseline justify-between border-b border-machine-gray/70 dark:border-[#2A3441] pb-3">
+                                                                <span class="font-headline-md text-3xl font-black text-industrial-navy/25 dark:text-[#94A3B8]/30 group-hover:text-industrial-navy/40 dark:group-hover:text-[#93C5FD] font-mono transition-colors">02</span>
+                                                                <span class="font-label-sm text-[10px] uppercase font-bold tracking-widest text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] px-2 py-0.5 rounded border border-machine-gray dark:border-[#2A3441]">Precision Tooling</span>
+                                                        </div>
+                                                        <div>
+                                                                <h4 class="font-headline-md text-lg font-bold text-industrial-navy dark:text-[#F3F4F6]">Tablet Compression</h4>
+                                                                <p class="font-body-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] mt-1">Multi-station turret calibration, weight variation control, and hardness tuning.</p>
+                                                        </div>
+                                                </div>
+
+                                                <!-- Systems Badge Strip -->
+                                                <div class="pt-4 border-t border-machine-gray/60 dark:border-[#2A3441] space-y-2">
+                                                        <span class="font-label-sm text-[10px] uppercase font-bold tracking-wider text-outline dark:text-[#94A3B8] block">Mastered Systems</span>
+                                                        <div class="flex flex-wrap gap-1.5">
+                                                                <span class="font-body-md text-xs font-semibold text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] px-2.5 py-1 rounded border border-machine-gray dark:border-[#2A3441] group-hover:border-industrial-navy/30 dark:group-hover:border-[#93C5FD]/30 transition-colors">CTX32 Compression Press</span>
+                                                                <span class="font-body-md text-xs font-semibold text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] px-2.5 py-1 rounded border border-machine-gray dark:border-[#2A3441] group-hover:border-industrial-navy/30 dark:group-hover:border-[#93C5FD]/30 transition-colors">Rotary Multi-Station Presses</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <!-- Capability Panel 03 -->
+                                        <div class="p-6 rounded-xl bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] hover:border-industrial-navy/50 dark:hover:border-[#93C5FD]/50 transition-all duration-300 flex flex-col justify-between space-y-6 group hover:shadow-sm">
+                                                <div class="space-y-4">
+                                                        <div class="flex items-baseline justify-between border-b border-machine-gray/70 dark:border-[#2A3441] pb-3">
+                                                                <span class="font-headline-md text-3xl font-black text-industrial-navy/25 dark:text-[#94A3B8]/30 group-hover:text-industrial-navy/40 dark:group-hover:text-[#93C5FD] font-mono transition-colors">03</span>
+                                                                <span class="font-label-sm text-[10px] uppercase font-bold tracking-widest text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] px-2 py-0.5 rounded border border-machine-gray dark:border-[#2A3441]">High-Speed Dosing</span>
+                                                        </div>
+                                                        <div>
+                                                                <h4 class="font-headline-md text-lg font-bold text-industrial-navy dark:text-[#F3F4F6]">Capsule Filling</h4>
+                                                                <p class="font-body-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] mt-1">High-speed automatic tamping pin alignment and powder filling accuracy.</p>
+                                                        </div>
+                                                </div>
+
+                                                <!-- Systems Badge Strip -->
+                                                <div class="pt-4 border-t border-machine-gray/60 dark:border-[#2A3441] space-y-2">
+                                                        <span class="font-label-sm text-[10px] uppercase font-bold tracking-wider text-outline dark:text-[#94A3B8] block">Mastered Systems</span>
+                                                        <div class="flex flex-wrap gap-1.5">
+                                                                <span class="font-body-md text-xs font-semibold text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] px-2.5 py-1 rounded border border-machine-gray dark:border-[#2A3441] group-hover:border-industrial-navy/30 dark:group-hover:border-[#93C5FD]/30 transition-colors">SA9 Automatic Encapsulator</span>
+                                                                <span class="font-body-md text-xs font-semibold text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] px-2.5 py-1 rounded border border-machine-gray dark:border-[#2A3441] group-hover:border-industrial-navy/30 dark:group-hover:border-[#93C5FD]/30 transition-colors">AF90 High Speed Encapsulation</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- 4. Quality & Compliance Architecture: Dual High-Authority Systems -->
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                                <!-- Left System: In-Process Quality Checks (IPQC Strip & Defect Prevention) -->
+                                <div class="lg:col-span-6 p-6 sm:p-8 rounded-xl bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] flex flex-col justify-between space-y-6 shadow-sm">
+                                        <div class="space-y-4">
+                                                <div class="flex items-center justify-between border-b border-machine-gray dark:border-[#2A3441] pb-3">
+                                                        <div class="flex items-center gap-2 text-industrial-navy dark:text-[#F3F4F6]">
+                                                                <span class="material-symbols-outlined text-xl text-industrial-navy dark:text-[#93C5FD]">fact_check</span>
+                                                                <h4 class="font-headline-md text-base font-bold uppercase tracking-wider text-industrial-navy dark:text-[#F3F4F6]">In-Process Quality Control (IPQC)</h4>
+                                                        </div>
+                                                        <span class="font-label-sm text-[10px] font-bold uppercase tracking-wider text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] px-2 py-0.5 rounded border border-machine-gray dark:border-[#2A3441]">Continuous Checks</span>
+                                                </div>
+                                                <p class="font-body-sm text-xs text-on-surface-variant dark:text-[#CBD5E1] leading-relaxed">
+                                                        Rigorous continuous monitoring parameters to ensure dimensional precision, hardness tolerance, and batch-to-batch integrity during active runs.
+                                                </p>
+
+                                                <!-- Connected Quality Check Parameters -->
+                                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2">
+                                                        <div class="p-3 bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] rounded-lg text-center">
+                                                                <span class="font-label-sm text-[10px] uppercase font-bold text-outline dark:text-[#94A3B8] block">Test 01</span>
+                                                                <span class="font-body-md text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] block mt-0.5">Thickness</span>
+                                                        </div>
+                                                        <div class="p-3 bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] rounded-lg text-center">
+                                                                <span class="font-label-sm text-[10px] uppercase font-bold text-outline dark:text-[#94A3B8] block">Test 02</span>
+                                                                <span class="font-body-md text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] block mt-0.5">Hardness</span>
+                                                        </div>
+                                                        <div class="p-3 bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] rounded-lg text-center">
+                                                                <span class="font-label-sm text-[10px] uppercase font-bold text-outline dark:text-[#94A3B8] block">Test 03</span>
+                                                                <span class="font-body-md text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] block mt-0.5">Friability</span>
+                                                        </div>
+                                                        <div class="p-3 bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] rounded-lg text-center">
+                                                                <span class="font-label-sm text-[10px] uppercase font-bold text-outline dark:text-[#94A3B8] block">Test 04</span>
+                                                                <span class="font-body-md text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] block mt-0.5">Disintegration</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <!-- Technical Callout: Defect Elimination -->
+                                        <div class="p-3.5 bg-surface-container-low dark:bg-[#1E293B] border border-machine-gray dark:border-[#2A3441] rounded-lg flex flex-wrap items-center justify-between gap-3">
+                                                <div class="flex items-center gap-2">
+                                                        <span class="material-symbols-outlined text-base text-industrial-navy dark:text-[#93C5FD]" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+                                                        <span class="font-label-sm text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] uppercase tracking-wide">Defect Prevention Mastery:</span>
+                                                </div>
+                                                <span class="font-body-md text-xs font-semibold text-industrial-navy dark:text-[#F3F4F6] bg-clinical-white dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] px-3 py-1 rounded-full shadow-2xs">
+                                                        Sticking &amp; Picking Elimination
+                                                </span>
+                                        </div>
+                                </div>
+
+                                <!-- Right System: Compliance & GMP Authority -->
+                                <div class="lg:col-span-6 p-6 sm:p-8 rounded-xl bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] flex flex-col justify-between space-y-6 shadow-sm">
+                                        <div class="space-y-4">
+                                                <div class="flex items-center justify-between border-b border-machine-gray dark:border-[#2A3441] pb-3">
+                                                        <div class="flex items-center gap-2 text-industrial-navy dark:text-[#F3F4F6]">
+                                                                <span class="material-symbols-outlined text-xl text-industrial-navy dark:text-[#93C5FD]">verified_user</span>
+                                                                <h4 class="font-headline-md text-base font-bold uppercase tracking-wider text-industrial-navy dark:text-[#F3F4F6]">Compliance &amp; Documentation</h4>
+                                                        </div>
+                                                        <span class="font-label-sm text-[10px] font-bold uppercase tracking-wider text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] px-2 py-0.5 rounded border border-machine-gray dark:border-[#2A3441]">Regulatory Rigor</span>
+                                                </div>
+
+                                                <!-- Compliance Pillars Grid -->
+                                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                                                        <div class="p-3 rounded-lg bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] flex items-start gap-2.5">
+                                                                <span class="material-symbols-outlined text-industrial-navy dark:text-[#93C5FD] text-lg shrink-0 mt-0.5">checklist</span>
+                                                                <div>
+                                                                        <span class="font-body-md text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] block">ALCOA+ Principles</span>
+                                                                        <span class="font-label-sm text-[11px] text-on-surface-variant dark:text-[#9CA3AF] mt-0.5 block">Attributable, legible, contemporaneous, original, accurate</span>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="p-3 rounded-lg bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] flex items-start gap-2.5">
+                                                                <span class="material-symbols-outlined text-industrial-navy dark:text-[#93C5FD] text-lg shrink-0 mt-0.5">gavel</span>
+                                                                <div>
+                                                                        <span class="font-body-md text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] block">SOP Plant Protocol</span>
+                                                                        <span class="font-label-sm text-[11px] text-on-surface-variant dark:text-[#9CA3AF] mt-0.5 block">Zero-deviation line execution across every shift</span>
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                                <!-- Batch Manufacturing Records Proof -->
+                                                <div class="p-3 bg-surface-container-low dark:bg-[#1E293B] border border-machine-gray dark:border-[#2A3441] rounded-lg flex items-center justify-between">
+                                                        <div class="flex items-center gap-2">
+                                                                <span class="material-symbols-outlined text-base text-industrial-navy dark:text-[#93C5FD]">history_edu</span>
+                                                                <span class="font-body-md text-xs font-bold text-industrial-navy dark:text-[#F3F4F6]">cGMP &amp; Batch Manufacturing Records (BMR)</span>
+                                                        </div>
+                                                        <span class="font-headline-md text-xs font-extrabold text-industrial-navy dark:text-[#F3F4F6] bg-clinical-white dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] px-2.5 py-0.5 rounded-full font-mono">
+                                                                26+ Yrs
+                                                        </span>
+                                                </div>
+                                        </div>
+
+                                        <!-- Cleaning Protocols Line -->
+                                        <div class="pt-3 flex flex-wrap items-center justify-between border-t border-machine-gray/70 dark:border-[#2A3441] gap-2">
+                                                <span class="font-label-sm text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] uppercase tracking-wide">Validated Cleaning Protocols:</span>
+                                                <div class="flex gap-1.5">
+                                                        <span class="font-label-sm text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] border border-machine-gray dark:border-[#2A3441] px-2.5 py-0.5 rounded-md">Type A</span>
+                                                        <span class="font-label-sm text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] border border-machine-gray dark:border-[#2A3441] px-2.5 py-0.5 rounded-md">Type B</span>
+                                                        <span class="font-label-sm text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] border border-machine-gray dark:border-[#2A3441] px-2.5 py-0.5 rounded-md">Type C</span>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Section 4: Achievements / Record of Excellence -->
+                <section class="scroll-mt-24" id="achievements">
+                        <div class="mb-12 border-b border-machine-gray dark:border-[#2A3441] pb-6">
+                                <div class="inline-flex items-center gap-2 mb-2">
+                                        <span class="w-2 h-2 rounded-full bg-industrial-navy dark:bg-[#93C5FD]"></span>
+                                        <span class="font-label-sm text-xs font-bold uppercase tracking-[0.2em] text-industrial-navy dark:text-[#93C5FD]">Recognition &amp; Impact</span>
+                                </div>
+                                <h2
+                                        class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg font-bold text-industrial-navy dark:text-[#F3F4F6] mb-3 tracking-tight">
+                                        Record of Excellence.
+                                </h2>
+                                <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-[#9CA3AF] max-w-3xl leading-relaxed">
+                                        Quantifiable impact through rigorous inspection, proactive problem-solving, and
+                                        continuous technical education in high-stakes pharmaceutical manufacturing
+                                        environments.
+                                </p>
+                        </div>
+
+                        <!-- Key Achievements Grid: Dominant 65/35 Split -->
+                        <div class="space-y-6 mb-12">
+                                <div class="flex items-center gap-2 text-industrial-navy dark:text-[#F3F4F6] border-b border-machine-gray dark:border-[#2A3441] pb-3">
+                                        <span class="material-symbols-outlined text-xl text-industrial-navy dark:text-[#93C5FD]">verified</span>
+                                        <h3 class="font-headline-md text-base font-bold uppercase tracking-wider">Key Achievements</h3>
+                                </div>
+
+                                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+                                        <!-- Primary Achievement: ₹2 CRORE Loss Prevented (Dominant 65% weight) -->
+                                        <div
+                                                class="lg:col-span-8 bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] rounded-xl p-6 sm:p-8 flex flex-col justify-between group hover:border-industrial-navy/50 dark:hover:border-[#93C5FD]/50 transition-all duration-300 shadow-sm relative overflow-hidden">
+                                                <div class="space-y-4">
+                                                        <div class="border-b border-machine-gray/70 dark:border-[#2A3441] pb-4">
+                                                                <span class="font-headline-lg text-4xl sm:text-5xl font-black text-industrial-navy dark:text-[#F3F4F6] tracking-tight block font-mono">
+                                                                        ₹2 CRORE
+                                                                </span>
+                                                                <span class="font-label-sm text-xs font-bold uppercase tracking-[0.18em] text-industrial-navy dark:text-[#93C5FD] block mt-1">
+                                                                        Loss Prevented
+                                                                </span>
+                                                        </div>
+                                                        <div>
+                                                                <h4 class="font-headline-md text-xl font-bold text-industrial-navy dark:text-[#F3F4F6] mb-2">
+                                                                        Critical Material Identification
+                                                                </h4>
+                                                                <p class="font-body-md text-on-surface-variant dark:text-[#CBD5E1] leading-relaxed max-w-2xl">
+                                                                        Successfully prevented a ₹2 crore loss by identifying and intercepting foreign particles in raw materials prior to the manufacturing cycle. This intervention maintained product integrity and regulatory compliance.
+                                                                </p>
+                                                        </div>
+                                                </div>
+
+                                                <div class="mt-6 pt-4 border-t border-machine-gray/70 dark:border-[#2A3441] flex items-center justify-between">
+                                                        <div class="flex items-center gap-2 text-industrial-navy dark:text-[#93C5FD] font-label-sm text-xs font-bold uppercase tracking-wider">
+                                                                <span class="material-symbols-outlined text-base">visibility</span>
+                                                                <span>Inspection Protocol Executed</span>
+                                                        </div>
+                                                        <span class="font-label-sm text-[10px] uppercase font-bold tracking-widest text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] px-2.5 py-1 rounded border border-machine-gray dark:border-[#2A3441]">
+                                                                Production Safeguard
+                                                        </span>
+                                                </div>
+                                        </div>
+
+                                        <!-- Secondary Achievement: Employee of the Year (Supporting 35% weight) -->
+                                        <div
+                                                class="lg:col-span-4 bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] rounded-xl p-6 sm:p-8 flex flex-col justify-between group hover:border-industrial-navy/50 dark:hover:border-[#93C5FD]/50 transition-all duration-300 shadow-sm">
+                                                <div class="space-y-4">
+                                                        <div class="flex items-center justify-between border-b border-machine-gray/70 dark:border-[#2A3441] pb-4">
+                                                                <span class="material-symbols-outlined text-3xl text-industrial-navy dark:text-[#F2DF74]"
+                                                                        style="font-variation-settings: 'FILL' 1;">military_tech</span>
+                                                                <span class="font-label-sm text-[10px] uppercase font-bold tracking-widest text-industrial-navy dark:text-[#F3F4F6] bg-surface-container-low dark:bg-[#1E293B] px-2 py-0.5 rounded border border-machine-gray dark:border-[#2A3441]">
+                                                                        Plant Honors
+                                                                </span>
+                                                        </div>
+                                                        <div>
+                                                                <h4 class="font-headline-md text-lg font-bold text-industrial-navy dark:text-[#F3F4F6] mb-2">
+                                                                        Employee of the Year
+                                                                </h4>
+                                                                <p class="font-body-sm text-xs sm:text-sm text-on-surface-variant dark:text-[#9CA3AF] leading-relaxed">
+                                                                        Recognized across the production facility for consistent operational excellence, zero-downtime maintenance initiatives, and unwavering adherence to safety protocols.
+                                                                </p>
+                                                        </div>
+                                                </div>
+
+                                                <div class="mt-6 pt-4 border-t border-machine-gray/70 dark:border-[#2A3441]">
+                                                        <span class="font-label-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] font-medium block">
+                                                                Facility-Wide Recognition
+                                                        </span>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- Official Recognition: High-Contrast Dark Block with Prominent Interactive Certificate -->
+                        <div class="mb-14">
+                                <div
+                                        class="bg-industrial-navy dark:bg-[#121820] text-clinical-white border border-industrial-navy dark:border-[#2A3441] rounded-xl p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-8 shadow-md">
+                                        <div class="max-w-2xl space-y-3">
+                                                <div class="flex items-center gap-2 text-[#93C5FD] font-label-sm text-xs font-bold uppercase tracking-[0.16em]">
+                                                        <span class="material-symbols-outlined text-[16px]">workspace_premium</span>
+                                                        <span>Official Recognition</span>
+                                                </div>
+                                                <h4 class="font-headline-md text-2xl font-bold text-clinical-white">
+                                                        Equipment Manufacturer Appreciation
+                                                </h4>
+                                                <p class="font-body-md text-sm sm:text-base text-[#CBD5E1] leading-relaxed">
+                                                        Received an official letter of appreciation from a leading pharmaceutical equipment manufacturer for providing critical feedback and technical insights that led to design improvements in their calibration modules.
+                                                </p>
+                                        </div>
+
+                                        <!-- Interactive Certificate Evidence View -->
+                                        <div class="w-full md:w-64 shrink-0 flex flex-col items-center md:items-end">
+                                                <button onclick="document.getElementById('certificateModal').classList.remove('hidden')"
+                                                        aria-label="View official appreciation certificate"
+                                                        class="group relative w-full h-36 bg-[#0B1118] border border-[#334155] hover:border-[#93C5FD] rounded-lg overflow-hidden transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#93C5FD]">
+                                                        <div class="bg-cover bg-center w-full h-full opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
+                                                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTz_SBXPESxFR4yA7OwYOyk717UPMig2dO4BWuj1EZ0XVw104vkU8lGUj8Hg5lipcLrJRc1JRV4WvImEAH5nF1X6mWiASNfGNzi38-wt6OqiFlxHH2q7-7WN95qBwVLbyDTumdpdwxxMty9RB1djkxB-jw8wLsPd-NcFh64VoaiLpoBXabUwC18UaFCYCI6BOsmCHma3EjbZGX7l2b3W_lALEIs8fIqxSfP3F17yh5fDo4iisDDnFl')">
+                                                        </div>
+                                                        <div class="absolute inset-0 bg-gradient-to-t from-[#0B1118]/90 via-transparent to-transparent flex items-end p-2.5">
+                                                                <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-clinical-white group-hover:text-[#93C5FD] transition-colors">
+                                                                        <span>VIEW CERTIFICATE</span>
+                                                                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">open_in_new</span>
+                                                                </span>
+                                                        </div>
+                                                </button>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- Modal Lightbox for Certificate -->
+                        <div id="certificateModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4" onclick="this.classList.add('hidden')">
+                                <div class="relative bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] rounded-xl max-w-2xl w-full p-4 sm:p-6 space-y-4 shadow-2xl" onclick="event.stopPropagation()">
+                                        <div class="flex items-center justify-between border-b border-machine-gray dark:border-[#2A3441] pb-3">
+                                                <div class="flex items-center gap-2 text-industrial-navy dark:text-[#F3F4F6]">
+                                                        <span class="material-symbols-outlined text-lg">workspace_premium</span>
+                                                        <h5 class="font-headline-md text-sm sm:text-base font-bold">Equipment Manufacturer Letter of Appreciation</h5>
+                                                </div>
+                                                <button onclick="document.getElementById('certificateModal').classList.add('hidden')" aria-label="Close certificate preview" class="p-1 rounded hover:bg-surface-container dark:hover:bg-[#1E293B] text-on-surface-variant dark:text-[#9CA3AF]">
+                                                        <span class="material-symbols-outlined text-xl">close</span>
+                                                </button>
+                                        </div>
+                                        <div class="w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-low border border-machine-gray dark:border-[#2A3441]">
+                                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTz_SBXPESxFR4yA7OwYOyk717UPMig2dO4BWuj1EZ0XVw104vkU8lGUj8Hg5lipcLrJRc1JRV4WvImEAH5nF1X6mWiASNfGNzi38-wt6OqiFlxHH2q7-7WN95qBwVLbyDTumdpdwxxMty9RB1djkxB-jw8wLsPd-NcFh64VoaiLpoBXabUwC18UaFCYCI6BOsmCHma3EjbZGX7l2b3W_lALEIs8fIqxSfP3F17yh5fDo4iisDDnFl" 
+                                                     alt="Letter of Appreciation - Pharmaceutical Equipment Manufacturer" 
+                                                     class="w-full h-full object-cover" />
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- Education & Training: Structured Proof Points -->
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+                                <!-- Education: Compact Editorial Block -->
+                                <div class="lg:col-span-4 bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] rounded-xl p-6 sm:p-8 flex flex-col justify-between space-y-6 shadow-sm">
+                                        <div class="space-y-4">
+                                                <div class="flex items-center justify-between border-b border-machine-gray/70 dark:border-[#2A3441] pb-3">
+                                                        <div class="flex items-center gap-2 text-industrial-navy dark:text-[#F3F4F6]">
+                                                                <span class="material-symbols-outlined text-lg text-industrial-navy dark:text-[#93C5FD]">school</span>
+                                                                <h3 class="font-headline-md text-sm font-bold uppercase tracking-wider">Formal Education</h3>
+                                                        </div>
+                                                        <span class="font-headline-md text-xs font-bold text-industrial-navy dark:text-[#93C5FD] font-mono bg-surface-container-low dark:bg-[#1E293B] px-2 py-0.5 rounded border border-machine-gray dark:border-[#2A3441]">
+                                                                1994
+                                                        </span>
+                                                </div>
+
+                                                <div>
+                                                        <span class="font-headline-lg text-3xl font-bold text-industrial-navy dark:text-[#F3F4F6] block font-mono leading-none">
+                                                                B.Sc.
+                                                        </span>
+                                                        <h4 class="font-body-md text-sm font-semibold text-industrial-navy dark:text-[#CBD5E1] mt-1.5">
+                                                                Bachelor of Science
+                                                        </h4>
+                                                        <p class="font-body-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] mt-1">
+                                                                North Maharashtra University
+                                                        </p>
+                                                </div>
+                                        </div>
+
+                                        <div class="pt-3 border-t border-machine-gray/70 dark:border-[#2A3441] flex items-center justify-between">
+                                                <span class="font-label-sm text-[11px] text-on-surface-variant dark:text-[#9CA3AF]">Graduation Year</span>
+                                                <span class="font-label-sm text-xs font-bold text-industrial-navy dark:text-[#F3F4F6]">1994</span>
+                                        </div>
+                                </div>
+
+                                <!-- Technical & Safety Training: 100+ Proof Point & Clean Two-Column Matrix -->
+                                <div class="lg:col-span-8 bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] rounded-xl p-6 sm:p-8 flex flex-col justify-between space-y-6 shadow-sm">
+                                        <div class="space-y-4">
+                                                <div class="flex flex-wrap items-baseline justify-between border-b border-machine-gray/70 dark:border-[#2A3441] pb-3 gap-2">
+                                                        <div class="flex items-center gap-2 text-industrial-navy dark:text-[#F3F4F6]">
+                                                                <span class="material-symbols-outlined text-lg text-industrial-navy dark:text-[#93C5FD]">model_training</span>
+                                                                <h3 class="font-headline-md text-sm font-bold uppercase tracking-wider">Technical &amp; Safety Training</h3>
+                                                        </div>
+                                                        <div class="flex items-baseline gap-1.5">
+                                                                <span class="font-headline-md text-xl font-black text-industrial-navy dark:text-[#93C5FD] font-mono leading-none">100+</span>
+                                                                <span class="font-label-sm text-[10px] uppercase font-bold tracking-wider text-industrial-navy dark:text-[#F3F4F6]">Specialized Programs</span>
+                                                        </div>
+                                                </div>
+
+                                                <p class="font-body-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] leading-relaxed">
+                                                        Completed over 100+ specialized training programs focused on operational safety, emergency response, and technical compliance within sterile environments.
+                                                </p>
+
+                                                <!-- Clean Training Two-Column Matrix -->
+                                                <div class="divide-y divide-machine-gray/70 dark:divide-[#2A3441] pt-1">
+                                                        <!-- Row 1 -->
+                                                        <div class="py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs">
+                                                                <span class="font-semibold text-industrial-navy dark:text-[#F3F4F6] sm:w-44 shrink-0">First Response</span>
+                                                                <span class="text-on-surface-variant dark:text-[#CBD5E1]">CPR (Cardiopulmonary Resuscitation) Certified</span>
+                                                        </div>
+                                                        <!-- Row 2 -->
+                                                        <div class="py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs">
+                                                                <span class="font-semibold text-industrial-navy dark:text-[#F3F4F6] sm:w-44 shrink-0">Hazard Control</span>
+                                                                <span class="text-on-surface-variant dark:text-[#CBD5E1]">Advanced Firefighting &amp; Extinguisher Operation</span>
+                                                        </div>
+                                                        <!-- Row 3 -->
+                                                        <div class="py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs">
+                                                                <span class="font-semibold text-industrial-navy dark:text-[#F3F4F6] sm:w-44 shrink-0">Operational Safety</span>
+                                                                <span class="text-on-surface-variant dark:text-[#CBD5E1]">Industrial Equipment Safety &amp; LOTO Protocols</span>
+                                                        </div>
+                                                        <!-- Row 4 -->
+                                                        <div class="py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs">
+                                                                <span class="font-semibold text-industrial-navy dark:text-[#F3F4F6] sm:w-44 shrink-0">Compliance</span>
+                                                                <span class="text-on-surface-variant dark:text-[#CBD5E1]">95+ Additional specialized modules in GMP/SOPs</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Section 5: Contact / Professional Inquiries -->
+                <section class="scroll-mt-24" id="contact">
+                        <!-- Section Intro & Technical Eyebrow -->
+                        <div class="mb-12 border-b border-machine-gray dark:border-[#2A3441] pb-6">
+                                <div class="inline-flex items-center gap-2 mb-2">
+                                        <span class="w-2 h-2 rounded-full bg-industrial-navy dark:bg-[#93C5FD]"></span>
+                                        <span class="font-label-sm text-xs font-bold uppercase tracking-[0.2em] text-industrial-navy dark:text-[#93C5FD]">Contact / Professional Inquiries</span>
+                                </div>
+                                <h2
+                                        class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg font-bold text-industrial-navy dark:text-[#F3F4F6] mb-3 tracking-tight">
+                                        DIRECT EMPLOYER &amp; RECRUITER INQUIRY
+                                </h2>
+                                <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-[#9CA3AF] max-w-3xl leading-relaxed">
+                                        For employment opportunities, manufacturing assignments, plant equipment setup consultation, or detailed credential requests.
+                                </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                                <!-- Left Column: Professional Dossier Panel (38% Desktop Width) -->
+                                <div
+                                        class="lg:col-span-5 bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] rounded-xl p-6 sm:p-8 shadow-sm flex flex-col justify-between space-y-8">
+                                        <div class="space-y-6">
+                                                <!-- Monogram & Header -->
+                                                <div class="flex items-center gap-4 border-b border-machine-gray/70 dark:border-[#2A3441] pb-6">
+                                                        <div
+                                                                class="w-14 h-14 bg-industrial-navy dark:bg-[#1E293B] text-clinical-white dark:text-[#93C5FD] border border-industrial-navy dark:border-[#475569] flex items-center justify-center font-headline-md text-xl font-bold rounded-lg shrink-0 shadow-xs">
+                                                                MS
+                                                        </div>
+                                                        <div>
+                                                                <h3
+                                                                        class="font-headline-md text-lg sm:text-xl font-bold text-industrial-navy dark:text-[#F3F4F6] leading-tight">
+                                                                        Mobin Jiaoddin Shaikh
+                                                                </h3>
+                                                                <p
+                                                                        class="font-label-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] font-medium mt-1">
+                                                                        Senior Pharmaceutical Machine Technician
+                                                                </p>
+                                                        </div>
+                                                </div>
+
+                                                <!-- Prominent Proof Point Anchor -->
+                                                <div class="p-4 bg-surface-container-low dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] rounded-lg flex items-center justify-between">
+                                                        <div>
+                                                                <span class="font-headline-lg text-3xl font-black text-industrial-navy dark:text-[#F3F4F6] block font-mono leading-none">
+                                                                        30+ YEARS
+                                                                </span>
+                                                                <span class="font-label-sm text-[10px] uppercase font-bold tracking-[0.16em] text-industrial-navy dark:text-[#93C5FD] block mt-1">
+                                                                        Pharmaceutical Manufacturing
+                                                                </span>
+                                                        </div>
+                                                        <span class="material-symbols-outlined text-2xl text-industrial-navy/30 dark:text-[#93C5FD]/30">factory</span>
+                                                </div>
+
+                                                <!-- Structured Credentials List -->
+                                                <div class="space-y-4">
+                                                        <!-- Target Roles -->
+                                                        <div class="p-3 bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] rounded-lg">
+                                                                <span class="font-label-sm text-[10px] uppercase font-bold text-outline dark:text-[#94A3B8] tracking-wider block">
+                                                                        Target Roles
+                                                                </span>
+                                                                <span class="font-body-md text-xs sm:text-sm font-bold text-industrial-navy dark:text-[#F3F4F6] block mt-1">
+                                                                        Machine Technician / Granulation &amp; Compression Lead
+                                                                </span>
+                                                        </div>
+
+                                                        <!-- Current Designation -->
+                                                        <div class="p-3 bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] rounded-lg flex items-center justify-between">
+                                                                <div>
+                                                                        <span class="font-label-sm text-[10px] uppercase font-bold text-outline dark:text-[#94A3B8] tracking-wider block">
+                                                                                Current Designation
+                                                                        </span>
+                                                                        <span class="font-body-md text-xs sm:text-sm font-semibold text-industrial-navy dark:text-[#F3F4F6] block mt-0.5">
+                                                                                Machine Technician (VS International)
+                                                                        </span>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- Compliance Mastery -->
+                                                        <div class="p-3 bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] rounded-lg">
+                                                                <span class="font-label-sm text-[10px] uppercase font-bold text-outline dark:text-[#94A3B8] tracking-wider block">
+                                                                        Compliance Mastery
+                                                                </span>
+                                                                <div class="flex flex-wrap gap-1.5 mt-1.5">
+                                                                        <span class="font-label-sm text-[11px] font-semibold text-industrial-navy dark:text-[#F3F4F6] bg-clinical-white dark:bg-[#1E293B] border border-machine-gray dark:border-[#2A3441] px-2 py-0.5 rounded">cGMP</span>
+                                                                        <span class="font-label-sm text-[11px] font-semibold text-industrial-navy dark:text-[#F3F4F6] bg-clinical-white dark:bg-[#1E293B] border border-machine-gray dark:border-[#2A3441] px-2 py-0.5 rounded">ALCOA+</span>
+                                                                        <span class="font-label-sm text-[11px] font-semibold text-industrial-navy dark:text-[#F3F4F6] bg-clinical-white dark:bg-[#1E293B] border border-machine-gray dark:border-[#2A3441] px-2 py-0.5 rounded">BMR</span>
+                                                                        <span class="font-label-sm text-[11px] font-semibold text-industrial-navy dark:text-[#F3F4F6] bg-clinical-white dark:bg-[#1E293B] border border-machine-gray dark:border-[#2A3441] px-2 py-0.5 rounded">IPQC</span>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <!-- CV Resource Button -->
+                                        <button onclick="window.print()"
+                                                class="w-full bg-clinical-white dark:bg-[#0B1118] hover:bg-surface-container-low dark:hover:bg-[#1E293B] text-industrial-navy dark:text-[#F3F4F6] border border-industrial-navy/30 dark:border-[#475569] font-label-md text-xs font-bold py-3.5 px-4 rounded-lg flex items-center justify-center gap-2 shadow-xs transition-all duration-200 uppercase tracking-wider group">
+                                                <span class="material-symbols-outlined text-base text-industrial-navy dark:text-[#93C5FD] group-hover:translate-y-0.5 transition-transform">download</span>
+                                                <span>DOWNLOAD / PRINT FORMAL CV</span>
+                                        </button>
+                                </div>
+
+                                <!-- Right Column: Recruiter Inquiry Workspace (62% Desktop Width) -->
+                                <div
+                                        class="lg:col-span-7 bg-clinical-white dark:bg-[#121820] border border-machine-gray dark:border-[#2A3441] rounded-xl p-6 sm:p-8 md:p-10 shadow-sm flex flex-col justify-between space-y-6">
+                                        <div class="border-b border-machine-gray/70 dark:border-[#2A3441] pb-4">
+                                                <h3
+                                                        class="font-headline-md text-lg font-bold text-industrial-navy dark:text-[#F3F4F6] uppercase tracking-wider">
+                                                        Direct Recruiter Workspace
+                                                </h3>
+                                                <p class="font-body-sm text-xs text-on-surface-variant dark:text-[#9CA3AF] mt-1">
+                                                        Please provide details regarding the plant location, machinery setup, or role requirements for direct evaluation.
+                                                </p>
+                                        </div>
+
+                                        <form class="space-y-5" onsubmit="event.preventDefault(); alert('Inquiry submitted successfully. Mobin will review your requirements promptly.');">
+                                                <!-- Row 1: Name & Organization -->
+                                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                                                        <div>
+                                                                <label
+                                                                        class="block font-label-sm text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] uppercase tracking-wider mb-1.5">
+                                                                        Recruiter / Contact Name <span class="text-error font-bold">*</span>
+                                                                </label>
+                                                                <input required
+                                                                        class="w-full bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] rounded-lg px-4 py-2.5 font-body-md text-sm text-industrial-navy dark:text-[#F3F4F6] placeholder-on-surface-variant/50 focus:border-industrial-navy dark:focus:border-[#93C5FD] focus:ring-1 focus:ring-industrial-navy dark:focus:ring-[#93C5FD] outline-none transition-colors"
+                                                                        placeholder="e.g. Dr. Rajesh Verma / HR Lead"
+                                                                        type="text" />
+                                                        </div>
+                                                        <div>
+                                                                <label
+                                                                        class="block font-label-sm text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] uppercase tracking-wider mb-1.5">
+                                                                        Organization / Plant Name
+                                                                </label>
+                                                                <input
+                                                                        class="w-full bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] rounded-lg px-4 py-2.5 font-body-md text-sm text-industrial-navy dark:text-[#F3F4F6] placeholder-on-surface-variant/50 focus:border-industrial-navy dark:focus:border-[#93C5FD] focus:ring-1 focus:ring-industrial-navy dark:focus:ring-[#93C5FD] outline-none transition-colors"
+                                                                        placeholder="e.g. Torrent Pharma / Cipla Ltd."
+                                                                        type="text" />
+                                                        </div>
+                                                </div>
+
+                                                <!-- Row 2: Email & Phone -->
+                                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                                                        <div>
+                                                                <label
+                                                                        class="block font-label-sm text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] uppercase tracking-wider mb-1.5">
+                                                                        Work Email Address <span class="text-error font-bold">*</span>
+                                                                </label>
+                                                                <input required
+                                                                        class="w-full bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] rounded-lg px-4 py-2.5 font-body-md text-sm text-industrial-navy dark:text-[#F3F4F6] placeholder-on-surface-variant/50 focus:border-industrial-navy dark:focus:border-[#93C5FD] focus:ring-1 focus:ring-industrial-navy dark:focus:ring-[#93C5FD] outline-none transition-colors"
+                                                                        placeholder="hr@pharmaplant.com"
+                                                                        type="email" />
+                                                        </div>
+                                                        <div>
+                                                                <label
+                                                                        class="block font-label-sm text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] uppercase tracking-wider mb-1.5">
+                                                                        Contact Phone / Mobile
+                                                                </label>
+                                                                <input
+                                                                        class="w-full bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] rounded-lg px-4 py-2.5 font-body-md text-sm text-industrial-navy dark:text-[#F3F4F6] placeholder-on-surface-variant/50 focus:border-industrial-navy dark:focus:border-[#93C5FD] focus:ring-1 focus:ring-industrial-navy dark:focus:ring-[#93C5FD] outline-none transition-colors"
+                                                                        placeholder="+91 98765 43210"
+                                                                        type="tel" />
+                                                        </div>
+                                                </div>
+
+                                                <!-- Engagement Purpose -->
+                                                <div>
+                                                        <label
+                                                                class="block font-label-sm text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] uppercase tracking-wider mb-1.5">
+                                                                Inquiry / Engagement Purpose
+                                                        </label>
+                                                        <div class="relative">
+                                                                <select
+                                                                        class="w-full bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] rounded-lg px-4 py-2.5 font-body-md text-sm text-industrial-navy dark:text-[#F3F4F6] focus:border-industrial-navy dark:focus:border-[#93C5FD] focus:ring-1 focus:ring-industrial-navy dark:focus:ring-[#93C5FD] outline-none transition-colors appearance-none cursor-pointer">
+                                                                        <option class="dark:bg-[#121820]">Full-time Machine Technician Role</option>
+                                                                        <option class="dark:bg-[#121820]">Granulation / Compression Lead Position</option>
+                                                                        <option class="dark:bg-[#121820]">Plant Equipment Setup &amp; Calibration Consultation</option>
+                                                                        <option class="dark:bg-[#121820]">Detailed Credential / Document Verification</option>
+                                                                        <option class="dark:bg-[#121820]">Other Professional Inquiry</option>
+                                                                </select>
+                                                                <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-outline dark:text-[#94A3B8] text-base">expand_more</span>
+                                                        </div>
+                                                </div>
+
+                                                <!-- Message / Job Description -->
+                                                <div>
+                                                        <label
+                                                                class="block font-label-sm text-xs font-bold text-industrial-navy dark:text-[#F3F4F6] uppercase tracking-wider mb-1.5">
+                                                                Message / Job Description Overview
+                                                        </label>
+                                                        <textarea rows="4"
+                                                                class="w-full bg-surface-container-lowest dark:bg-[#0B1118] border border-machine-gray dark:border-[#2A3441] rounded-lg px-4 py-3 font-body-md text-sm text-industrial-navy dark:text-[#F3F4F6] placeholder-on-surface-variant/50 focus:border-industrial-navy dark:focus:border-[#93C5FD] focus:ring-1 focus:ring-industrial-navy dark:focus:ring-[#93C5FD] outline-none transition-colors resize-y"
+                                                                placeholder="Briefly describe the manufacturing facility location, machinery portfolio (e.g. RMG, rotary presses), and shift requirements..."></textarea>
+                                                </div>
+
+                                                <!-- Form Action & Confidence Signal -->
+                                                <div class="pt-2 space-y-4">
+                                                        <button type="submit"
+                                                                class="w-full bg-industrial-navy hover:bg-precision-blue dark:bg-[#1E293B] dark:hover:bg-[#334155] text-clinical-white font-label-md text-xs sm:text-sm font-bold py-3.5 px-6 rounded-lg flex items-center justify-center gap-2 border border-industrial-navy dark:border-[#475569] shadow-sm hover:shadow transition-all duration-200 uppercase tracking-widest group">
+                                                                <span>SEND RECRUITER INQUIRY</span>
+                                                                <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">send</span>
+                                                        </button>
+
+                                                        <div class="flex items-center justify-center gap-2 text-center text-outline dark:text-[#94A3B8] font-label-sm text-[11px] uppercase tracking-widest">
+                                                                <span class="material-symbols-outlined text-xs text-industrial-navy dark:text-[#93C5FD]">lock</span>
+                                                                <span>Direct Professional Contact · Employment · Technical Inquiries</span>
+                                                        </div>
+                                                </div>
+                                        </form>
+                                </div>
+                        </div>
+                </section>
+        </main>
+        <!-- Footer -->
+        <footer class="w-full py-12 md:py-16 bg-[#121820] text-clinical-white border-t border-[#2A3441] mt-24">
+                <div
+                        class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-12">
+                        <!-- Left Side: Exact Navbar Branding Identity & Dynamic Copyright -->
+                        <div class="space-y-3">
+                                <a href="#home"
+                                        class="group inline-flex flex-col justify-center text-left select-none decoration-transparent focus:outline-none">
+                                        <div class="flex items-baseline gap-2">
+                                                <span
+                                                        class="font-signature text-3xl sm:text-4xl text-[#F3F4F6] font-normal leading-none tracking-wide group-hover:text-[#F2DF74] transition-colors duration-300">Mobin</span>
+                                                <span
+                                                        class="font-editorial-serif text-2xl sm:text-3xl text-[#E5E7EB] font-semibold tracking-tight uppercase leading-none">Shaikh</span>
+                                        </div>
+                                </a>
+                                <p class="font-body-sm text-xs sm:text-sm text-[#9CA3AF] leading-relaxed">
+                                        &copy; <span id="currentYear"></span> Mobin Jiaoddin Shaikh. Industrial Excellence.
+                                </p>
+                        </div>
+
+                        <!-- Right Side: Clean Nav Links & Action Buttons -->
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-6 md:gap-8 w-full md:w-auto justify-between md:justify-end">
+                                <ul class="flex items-center gap-6 font-modern-sans text-xs uppercase tracking-[0.2em] font-medium text-[#9CA3AF]">
+                                        <li>
+                                                <a class="hover:text-[#F3F4F6] hover:underline decoration-safety-yellow underline-offset-4 transition-colors duration-200"
+                                                        href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                        </li>
+                                        <li>
+                                                <a class="hover:text-[#F3F4F6] hover:underline decoration-safety-yellow underline-offset-4 transition-colors duration-200"
+                                                        href="mailto:contact@mobinshaikh.com">Email</a>
+                                        </li>
+                                </ul>
+
+                                <div class="flex items-center gap-3">
+                                        <button onclick="window.print()"
+                                                class="bg-[#1E293B] hover:bg-[#334155] border border-[#475569] text-[#F3F4F6] font-label-sm text-xs font-semibold px-4 py-2.5 rounded-lg flex items-center gap-2 shadow-xs transition-all duration-200 uppercase tracking-wider group">
+                                                <span>Download CV</span>
+                                                <span class="material-symbols-outlined text-sm group-hover:translate-y-0.5 transition-transform">download</span>
+                                        </button>
+                                        <a href="#home"
+                                                class="bg-[#1E293B] hover:bg-[#334155] border border-[#475569] text-[#F3F4F6] font-label-sm text-xs font-semibold px-4 py-2.5 rounded-lg flex items-center gap-2 shadow-xs transition-all duration-200 uppercase tracking-wider group">
+                                                <span>Back to Top</span>
+                                                <span class="material-symbols-outlined text-sm group-hover:-translate-y-0.5 transition-transform">arrow_upward</span>
+                                        </a>
+                                </div>
+                        </div>
+                </div>
+        </footer>
+
+        <script>
+                // Dynamic Year
+                const yearSpan = document.getElementById('currentYear');
+                if (yearSpan) {
+                        yearSpan.textContent = new Date().getFullYear();
+                }
+
+                // Dark mode toggle logic
+                const themeToggleBtn = document.getElementById('themeToggleBtn');
+                const themeToggleBtnMobile = document.getElementById('themeToggleBtnMobile');
+                const htmlElement = document.documentElement;
+
+                // Initialize theme from localStorage (default: dark)
+                if (localStorage.getItem('theme') === 'light') {
+                        htmlElement.classList.remove('dark');
+                        htmlElement.classList.add('light');
+                } else {
+                        htmlElement.classList.add('dark');
+                        htmlElement.classList.remove('light');
+                }
+
+                function toggleTheme() {
+                        if (htmlElement.classList.contains('dark')) {
+                                htmlElement.classList.remove('dark');
+                                htmlElement.classList.add('light');
+                                localStorage.setItem('theme', 'light');
+                        } else {
+                                htmlElement.classList.remove('light');
+                                htmlElement.classList.add('dark');
+                                localStorage.setItem('theme', 'dark');
+                        }
+                }
+
+                if (themeToggleBtn) themeToggleBtn.addEventListener('click', toggleTheme);
+                if (themeToggleBtnMobile) themeToggleBtnMobile.addEventListener('click', toggleTheme);
+
+                // Mobile menu toggle
+                const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (mobileMenuBtn && mobileMenu) {
+                        mobileMenuBtn.addEventListener('click', () => {
+                                mobileMenu.classList.toggle('hidden');
+                        });
+                }
+
+                // Active navigation highlight on scroll
+                const navLinks = document.querySelectorAll('.nav-link-indicator');
+                const sections = document.querySelectorAll('section[id]');
+
+                window.addEventListener('scroll', () => {
+                        let current = '';
+                        sections.forEach(section => {
+                                const sectionTop = section.offsetTop - 120;
+                                if (window.pageYOffset >= sectionTop) {
+                                        current = section.getAttribute('id');
+                                }
+                        });
+
+                        navLinks.forEach(link => {
+                                link.classList.remove('active');
+                                if (link.getAttribute('href') === `#${current}`) {
+                                        link.classList.add('active');
+                                }
+                        });
+                });
+        </script>
+</body>
+
+</html>
